@@ -14,7 +14,7 @@
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b55d9'/%3E%3Crect x='14' y='15' width='36' height='26' rx='4' fill='white'/%3E%3Cpath d='M26 50h12M32 41v9' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='24' cy='27' r='4' fill='%23ffb020'/%3E%3Cpath d='m31 34 5-7 7 7' fill='none' stroke='%231b55d9' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"
     />
     <title>Informatik 7 · Gute Präsentationen</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=3" />
   </head>
   <body>
     <header class="topbar">
@@ -180,8 +180,47 @@
             <details>
               <summary>Lösung und bessere Folie</summary>
               <div class="solution">
-                <p><strong>Besser:</strong> Ein einziges Bild zeigt, woher das Plastik kommt. Beim Zeigen erklärst du den Weg vom Fluss ins Meer.</p>
-                <div class="better-slide image-purpose"><b>Ein Bild – eine Aufgabe:</b><span>zeigen · erklären · belegen</span></div>
+                <p><strong>Besser:</strong> Ein einziges Bild erklärt, wie Plastik von der Straße ins Meer gelangt.</p>
+                <figure class="plastic-picture">
+                  <svg viewBox="0 0 720 300" role="img" aria-labelledby="plastic-title plastic-desc">
+                    <title id="plastic-title">Der Weg des Plastiks ins Meer</title>
+                    <desc id="plastic-desc">Eine Plastikflasche gelangt von der Straße über einen Gully in den Fluss und schließlich ins Meer.</desc>
+                    <defs>
+                      <marker id="arrow-tip" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+                        <path d="M0,0 L10,5 L0,10 Z" fill="#f07a3d"></path>
+                      </marker>
+                    </defs>
+                    <rect width="720" height="300" rx="20" fill="#eef7ff"></rect>
+                    <path d="M0 195 C150 170 230 225 345 192 C470 156 555 185 720 137 L720 300 L0 300 Z" fill="#7cc5f3"></path>
+                    <path d="M0 215 C140 190 235 245 355 211 C485 175 590 205 720 157" fill="none" stroke="#ffffff" stroke-width="7" opacity=".75"></path>
+                    <g transform="translate(54 47)">
+                      <rect x="0" y="0" width="135" height="104" rx="16" fill="#d6dde5"></rect>
+                      <path d="M14 26 H121 M14 52 H121 M14 78 H121" stroke="#ffffff" stroke-width="6" stroke-dasharray="20 12"></path>
+                      <rect x="50" y="25" width="28" height="56" rx="8" fill="#ef8d42" transform="rotate(24 64 53)"></rect>
+                      <rect x="57" y="17" width="14" height="14" rx="3" fill="#1656a6" transform="rotate(24 64 24)"></rect>
+                      <text x="67" y="127" text-anchor="middle">Straße</text>
+                    </g>
+                    <path d="M205 100 C235 100 243 112 267 126" fill="none" stroke="#f07a3d" stroke-width="7" marker-end="url(#arrow-tip)"></path>
+                    <g transform="translate(280 85)">
+                      <rect width="106" height="68" rx="12" fill="#344b63"></rect>
+                      <path d="M17 17 H89 M17 34 H89 M17 51 H89" stroke="#9cb0c3" stroke-width="6"></path>
+                      <text x="53" y="91" text-anchor="middle">Gully</text>
+                    </g>
+                    <path d="M399 137 C427 150 438 174 462 187" fill="none" stroke="#f07a3d" stroke-width="7" marker-end="url(#arrow-tip)"></path>
+                    <g transform="translate(468 151)">
+                      <circle cx="58" cy="58" r="58" fill="#1d77c5"></circle>
+                      <path d="M15 53 Q36 35 58 53 T101 53 M15 76 Q36 58 58 76 T101 76" fill="none" stroke="#ffffff" stroke-width="7"></path>
+                      <text x="58" y="140" text-anchor="middle">Fluss</text>
+                    </g>
+                    <path d="M589 184 C622 173 639 157 660 146" fill="none" stroke="#f07a3d" stroke-width="7" marker-end="url(#arrow-tip)"></path>
+                    <g transform="translate(620 49)">
+                      <circle cx="42" cy="42" r="42" fill="#0d4d92"></circle>
+                      <path d="M12 42 Q27 27 42 42 T72 42 M12 58 Q27 43 42 58 T72 58" fill="none" stroke="#ffffff" stroke-width="6"></path>
+                      <text x="42" y="108" text-anchor="middle">Meer</text>
+                    </g>
+                  </svg>
+                  <figcaption>Dieses Bild zeigt einen Zusammenhang, den du beim Sprechen erklären kannst.</figcaption>
+                </figure>
               </div>
             </details>
           </article>
@@ -212,7 +251,7 @@
             <div class="example-meta"><span>BEISPIEL 5</span><strong>Effekte ohne Sinn</strong></div>
             <div class="mini-slide mini-effects">
               <p class="mini-title">DIE RÖMER</p>
-              <div><span>dreht sich</span><span>blinkt</span><span>fliegt herein</span></div>
+              <div><span class="effect-spin">dreht sich</span><span class="effect-blink">blinkt</span><span class="effect-fly">fliegt herein</span></div>
               <p>Wenn alles Aufmerksamkeit fordert, hört niemand mehr richtig zu.</p>
             </div>
             <p class="think-question">Wie viele verschiedene Übergänge braucht ein Vortrag?</p>
@@ -285,6 +324,6 @@
       <p>Teil 1: Gute und schlechte Präsentationen</p>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="app.js?v=3"></script>
   </body>
 </html>
