@@ -57,6 +57,24 @@ const questions = [
     answers: ["Die Folie", "Das Publikum", "Du – die Folie unterstützt dich"],
     correct: 2,
     feedback: "Genau: Du erklärst. Die Folie ist nur dein Werkzeug."
+  },
+  {
+    question: "Mia schreibt als Quelle nur ‚Google‘. Was sollte sie stattdessen nennen?",
+    answers: ["Die Webseite, von der die Information stammt", "Das verwendete Handy", "Gar keine Quelle"],
+    correct: 0,
+    feedback: "Google ist eine Suchmaschine. Die eigentliche Webseite ist die Quelle."
+  },
+  {
+    question: "Du möchtest vier Zahlen schnell vergleichen. Was eignet sich meistens am besten?",
+    answers: ["Ein einfaches Diagramm", "Vier verschiedene Schriftarten", "Ein langer Fließtext"],
+    correct: 0,
+    feedback: "Ein übersichtliches Diagramm macht Größenunterschiede schnell sichtbar."
+  },
+  {
+    question: "Jede Überschrift fliegt anders auf die Folie. Was ist die beste Verbesserung?",
+    answers: ["Noch Geräusche ergänzen", "Ruhige, einheitliche oder gar keine Effekte nutzen", "Die Effekte schneller abspielen"],
+    correct: 1,
+    feedback: "Ruhige Folien lenken den Blick auf den Inhalt und auf deinen Vortrag."
   }
 ];
 
@@ -130,15 +148,15 @@ function showResult() {
   quizContent.hidden = true;
   result.hidden = false;
 
-  if (score === 5) {
+  if (score === questions.length) {
     resultTitle.textContent = "Du bist folienfit!";
     resultText.textContent = "Perfekt – du erkennst, was eine gute Präsentation ausmacht.";
-  } else if (score >= 3) {
+  } else if (score >= 5) {
     resultTitle.textContent = "Schon ziemlich folienfit!";
-    resultText.textContent = `${score} von 5 richtig. Schau dir die sechs Regeln noch einmal an – dann sitzt es.`;
+    resultText.textContent = `${score} von ${questions.length} richtig. Schau dir die Beispiele noch einmal an – dann sitzt es.`;
   } else {
     resultTitle.textContent = "Ein guter Anfang!";
-    resultText.textContent = `${score} von 5 richtig. Vergleiche die beiden Folien noch einmal und starte danach einen neuen Versuch.`;
+    resultText.textContent = `${score} von ${questions.length} richtig. Klappe die Lösungen bei den Beispielen auf und starte danach einen neuen Versuch.`;
   }
 }
 
