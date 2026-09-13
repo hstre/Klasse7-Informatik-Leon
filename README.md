@@ -6,7 +6,8 @@ Interaktive Lernseite für die 7. Klasse.
 
 - gute und schlechte Präsentationsfolien vergleichen
 - sechs Gestaltungsregeln kennenlernen
-- Wissen in einem kurzen Quiz prüfen
+- sechs typische Folienfehler an Schulbeispielen verbessern
+- Wissen in einem Quiz mit acht Fragen prüfen
 
 ## GitHub Pages
 
