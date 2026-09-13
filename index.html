@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Interaktive Lernseite für die 7. Klasse: Gute und schlechte Präsentationen erkennen."
+    />
+    <meta name="theme-color" content="#f4f7fb" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b55d9'/%3E%3Crect x='14' y='15' width='36' height='26' rx='4' fill='white'/%3E%3Cpath d='M26 50h12M32 41v9' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='24' cy='27' r='4' fill='%23ffb020'/%3E%3Cpath d='m31 34 5-7 7 7' fill='none' stroke='%231b55d9' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"
+    />
+    <title>Informatik 7 · Gute Präsentationen</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#start" aria-label="Zum Anfang">
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span>Informatik 7</span>
+      </a>
+      <div class="course-progress" aria-label="Kursfortschritt">
+        <span>Teil 1 von 3</span>
+        <span class="progress-track"><span></span></span>
+      </div>
+    </header>
+
+    <main id="start">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">PRÄSENTATIONEN</p>
+        <h1 id="page-title">Was macht eine Präsentation gut?</h1>
+        <p class="lead">
+          Eine gute Folie hilft dem Publikum, dir zuzuhören. Sie ist kein Spickzettel,
+          den du an die Wand wirfst.
+        </p>
+        <a class="start-link" href="#vergleich">Vergleich starten <span aria-hidden="true">↓</span></a>
+      </section>
+
+      <section class="lesson-section comparison-section" id="vergleich" aria-labelledby="compare-title">
+        <div class="section-heading">
+          <div>
+            <p class="step">01 · VERGLEICHEN</p>
+            <h2 id="compare-title">Zwei Folien. Dasselbe Thema.</h2>
+          </div>
+          <p>Schalte um und beobachte, was sich verändert.</p>
+        </div>
+
+        <div class="toggle" role="tablist" aria-label="Folienbeispiel wählen">
+          <button class="toggle-button active" id="bad-tab" role="tab" aria-selected="true" aria-controls="slide-demo" data-mode="bad">
+            Schlechte Folie
+          </button>
+          <button class="toggle-button" id="good-tab" role="tab" aria-selected="false" aria-controls="slide-demo" data-mode="good">
+            Gute Folie
+          </button>
+        </div>
+
+        <div class="demo-shell bad" id="slide-demo" role="tabpanel" aria-live="polite">
+          <div class="screen-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+          <article class="demo-slide bad-slide" aria-label="Beispiel für eine schlechte Präsentationsfolie">
+            <p class="bad-kicker">UNSER SONNENSYSTEM!!!</p>
+            <h3>Der Mars und viele andere interessante Informationen</h3>
+            <div class="bad-content">
+              <p>
+                Der Mars ist der vierte Planet von der Sonne und wird auch der rote Planet genannt,
+                weil seine Oberfläche Eisenoxid enthält. Er hat zwei Monde und eine sehr dünne
+                Atmosphäre. Außerdem gibt es dort den Olympus Mons, den größten Vulkan in unserem
+                Sonnensystem, und früher gab es vermutlich Wasser und vielleicht kann man irgendwann
+                dorthin fliegen und dort leben, aber das ist sehr schwierig.
+              </p>
+              <div class="bad-sticker">WICHTIG!!!</div>
+            </div>
+            <p class="bad-footer">Quelle: Internet &nbsp; | &nbsp; Danke fürs Zuhören :)</p>
+          </article>
+
+          <article class="demo-slide good-slide" aria-label="Beispiel für eine gute Präsentationsfolie" hidden>
+            <p class="good-kicker">DER MARS</p>
+            <h3>Warum ist der Mars rot?</h3>
+            <div class="good-content">
+              <div class="planet" aria-hidden="true"><span></span></div>
+              <ul>
+                <li>Im Boden steckt Eisen.</li>
+                <li>Es reagiert mit Sauerstoff.</li>
+                <li>Dabei entsteht roter Rost.</li>
+              </ul>
+            </div>
+            <p class="source">Quelle: NASA, 2024</p>
+          </article>
+        </div>
+
+        <div class="observation bad-observation" id="observation">
+          <span class="status-icon" aria-hidden="true">×</span>
+          <div>
+            <strong>Was macht das Zuhören schwer?</strong>
+            <p>Zu viel Text, zu kleine Schrift, zu viele Farben und keine klare Hauptaussage.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="lesson-section rules-section" aria-labelledby="rules-title">
+        <div class="section-heading">
+          <div>
+            <p class="step">02 · VERSTEHEN</p>
+            <h2 id="rules-title">Die sechs Regeln</h2>
+          </div>
+          <p>Wenn diese Regeln passen, bist du auf einem guten Weg.</p>
+        </div>
+
+        <div class="rules-grid">
+          <article class="rule-card"><span>01</span><div><h3>Eine Hauptaussage</h3><p>Jede Folie beantwortet eine klare Frage.</p></div></article>
+          <article class="rule-card"><span>02</span><div><h3>Wenig Text</h3><p>Nutze Stichwörter statt langer Sätze.</p></div></article>
+          <article class="rule-card"><span>03</span><div><h3>Große Schrift</h3><p>Auch die letzte Reihe muss alles lesen können.</p></div></article>
+          <article class="rule-card"><span>04</span><div><h3>Starker Kontrast</h3><p>Dunkle Schrift auf hellem Grund – oder umgekehrt.</p></div></article>
+          <article class="rule-card"><span>05</span><div><h3>Passende Bilder</h3><p>Ein Bild soll etwas erklären, nicht nur schmücken.</p></div></article>
+          <article class="rule-card"><span>06</span><div><h3>Du erklärst</h3><p>Die Folie unterstützt dich. Du hältst den Vortrag.</p></div></article>
+        </div>
+
+        <div class="remember">
+          <span aria-hidden="true">!</span>
+          <p><strong>Merksatz:</strong> Die Folie unterstützt dich – sie ersetzt dich nicht.</p>
+        </div>
+      </section>
+
+      <section class="lesson-section quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="quiz-copy">
+          <p class="step">03 · AUSPROBIEREN</p>
+          <h2 id="quiz-title">Bist du folienfit?</h2>
+          <p>Fünf kurze Fragen. Du bekommst sofort eine Rückmeldung.</p>
+          <div class="score-badge"><span id="score">0</span> / 5 richtig</div>
+        </div>
+
+        <div class="quiz-card">
+          <div id="quiz-content">
+            <div class="quiz-progress-row">
+              <span id="question-number">Frage 1 von 5</span>
+              <div class="quiz-progress" aria-hidden="true"><span id="quiz-progress-bar"></span></div>
+            </div>
+            <h3 id="question">Was gehört am besten auf eine Präsentationsfolie?</h3>
+            <div class="answers" id="answers"></div>
+            <p class="feedback" id="feedback" aria-live="polite"></p>
+            <button class="next-button" id="next-button" type="button" hidden>Nächste Frage</button>
+          </div>
+
+          <div class="result" id="result" hidden>
+            <div class="result-mark" aria-hidden="true">✓</div>
+            <p class="step">GESCHAFFT</p>
+            <h3 id="result-title">Du bist folienfit!</h3>
+            <p id="result-text"></p>
+            <button class="restart-button" id="restart-button" type="button">Noch einmal spielen</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Informatik · Klasse 7 · Präsentationen</p>
+      <p>Teil 1: Gute und schlechte Präsentationen</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
