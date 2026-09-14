@@ -242,6 +242,17 @@ h1 { max-width: 760px; margin: 0; font-size: clamp(48px, 7vw, 88px); line-height
 .result h3 { margin: 0 0 12px; }
 .result p:not(.step) { max-width: 460px; margin: 0 auto 18px; color: var(--muted); }
 
+.download-section { display: flex; align-items: center; justify-content: space-between; gap: 36px; padding: 52px max(24px, calc((100vw - 1120px) / 2)); color: #fff; background: var(--ink); }
+.download-section .step { margin: 0 0 8px; color: #8bb3ff; }
+.download-section h2 { margin: 0 0 8px; font-size: clamp(25px, 3vw, 38px); letter-spacing: -.025em; }
+.download-section p:not(.step) { margin: 0; color: #b5c1d2; }
+.pdf-link { min-width: 260px; display: flex; align-items: center; gap: 14px; padding: 15px 18px; color: var(--ink); background: #fff; border-radius: 16px; text-decoration: none; box-shadow: 0 12px 28px rgba(0,0,0,.16); transition: transform .18s ease, box-shadow .18s ease; }
+.pdf-link:hover { transform: translateY(-2px); box-shadow: 0 16px 32px rgba(0,0,0,.22); }
+.pdf-link:focus-visible { outline: 3px solid #8bb3ff; outline-offset: 4px; }
+.pdf-icon { width: 48px; height: 48px; display: grid; place-items: center; flex: 0 0 auto; color: #fff; background: var(--blue); border-radius: 12px; font-size: 12px; font-weight: 850; letter-spacing: .04em; }
+.pdf-link strong, .pdf-link small { display: block; }
+.pdf-link small { margin-top: 2px; color: var(--muted); font-size: 13px; }
+
 footer { display: flex; justify-content: space-between; gap: 20px; padding: 28px max(24px, calc((100vw - 1120px) / 2)); color: var(--muted); background: #e9eef5; border-top: 1px solid var(--line); font-size: 14px; }
 footer p { margin: 0; }
 
@@ -286,6 +297,8 @@ footer p { margin: 0; }
   .mini-slide { min-height: 225px; padding: 22px; }
   .think-question { min-height: auto; }
   .quiz-card { min-height: 470px; padding: 25px 20px; }
+  .download-section { display: block; padding: 42px 20px; }
+  .pdf-link { min-width: 0; margin-top: 24px; }
   footer { display: block; padding: 25px 20px; }
   footer p + p { margin-top: 5px; }
 }
